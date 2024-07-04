@@ -41,7 +41,7 @@ align-items: center;
 
 const Imagen = ({foto, expandida = false , AlsolicitarZoom , AlternarFavorito}) =>{
 
-  const iconoFavorito = foto.favorito ? "../public/iconos/favorito-activo.png" : "../public/iconos/favorito.png"
+  const iconoFavorito = foto.favorito ? "/iconos/favorito-activo.png" : "/iconos/favorito.png"
     
     return (
         <Figure $expandida={expandida} id={`foto-${foto.id}`} >
@@ -55,7 +55,7 @@ const Imagen = ({foto, expandida = false , AlsolicitarZoom , AlternarFavorito}) 
 
                         {!expandida && <BotonIcono aria-hidden={expandida} onClick={() => AlsolicitarZoom(foto)}>
 
-                        <img src="../public/iconos/expandir.png" alt="expandir" /></BotonIcono>}
+                        <img src="/iconos/expandir.png" alt="expandir" /></BotonIcono>}
                     
                 </Pie>
             </figcaption>

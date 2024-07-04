@@ -13,7 +13,9 @@ const HeaderStyles = styled.header`
 const Cabecera = ({filtro , setFiltro}) =>{
 
 return <HeaderStyles>
-    <img src="../public/img/logo.png" alt="Logo de Space App" />
+
+   
+    <img src="/img/Logo.png" alt="Logo de SpaceApp" />
     <CampoTexto filtro={filtro} setFiltro={setFiltro}/>
 </HeaderStyles>
 
