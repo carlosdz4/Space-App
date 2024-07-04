@@ -55,7 +55,7 @@ useEffect( () => {
 
   const AlternarFavorito = (foto) =>{
 
-    if (foto.id === fotoSelecionada.id) {
+    if (foto.id === fotoSelecionada?.id) {
       setfotoSelecionada({
         ...fotoSelecionada,
         favorito: !fotoSelecionada.favorito
